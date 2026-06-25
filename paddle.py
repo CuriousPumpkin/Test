@@ -1,4 +1,4 @@
-from Turtle import Turtle, Screen
+from turtle import Turtle, Screen
 
 class paddle(Turtle):
     def __init__(self, xcor, ycor):
