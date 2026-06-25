@@ -1,4 +1,4 @@
-from Turtle import Turtle
+from Turtle import Turtle, Screen
 
 class paddle(Turtle):
     def __init__(self, xcor, ycor):
@@ -19,3 +19,4 @@ class paddle(Turtle):
         new_y = self.ycor() - 20
         if new_y > -250:
             self.goto(self.xcor(), new_y)
+
