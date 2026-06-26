@@ -28,8 +28,11 @@ while game_on:
 
     if ball.ycor() > 280 or ball.ycor() < -280:
     #ball needs to bounce
-       ball.bounce()
+       ball.y_bounce()
 
+    if ball.distance(paddle1) < 50 and ball.xcor() > 340 or ball.distance(paddle2) > -50 and ball.xcor() < -340:
+        #bounce in the xcordinate
+        ball.x_bounce()
 
 
 
