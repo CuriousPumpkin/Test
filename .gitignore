@@ -1,0 +1,19 @@
+# Ignore specific files
+.env
+config.secrets.json
+
+# Ignore entire directories (ending with /)
+node_modules/
+venv/
+__pycache__/
+build/
+dist/
+
+# Ignore files by extension / wildcard
+*.log
+*.tmp
+*.o
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db

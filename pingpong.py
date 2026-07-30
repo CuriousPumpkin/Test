@@ -34,8 +34,8 @@ while game_on:
         #bounce in the xcordinate
         ball.x_bounce()
 
-
-
+    if ball.xcor() > 380:
+        ball.reset_position()
 
 
 
