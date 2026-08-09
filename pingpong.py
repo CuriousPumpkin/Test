@@ -36,9 +36,16 @@ while game_on:
         #bounce in the xcordinate
         ball.x_bounce()
 
-    if ball.xcor() > 380 or ball.xcor() < -380:
+    if ball.xcor() > 380:
         ball.reset_position()
         ball.x_bounce()
+        scoreboard.l_point()
+    
+    if ball.xcor() < -380:
+        ball.reset_position()
+        ball.x_bounce()
+        scoreboard.r_point()
+
 
 
 
