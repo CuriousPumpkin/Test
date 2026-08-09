@@ -24,7 +24,7 @@ screen.listen()
 
 game_on = True
 while game_on:
-    time.sleep(0.1)
+    time.sleep(ball.move_speed)
     screen.update()
     ball.move()
 
@@ -35,18 +35,19 @@ while game_on:
     if ball.distance(paddle1) < 50 and ball.xcor() > 340 or ball.distance(paddle2) < 50 and ball.xcor() < -340:
         #bounce in the xcordinate
         ball.x_bounce()
+        ball.move_speed *= 0.9
 
     if ball.xcor() > 380:
         ball.reset_position()
+        ball.move_speed = 0.1
         ball.x_bounce()
         scoreboard.l_point()
     
     if ball.xcor() < -380:
         ball.reset_position()
+        ball.move_speed = 0.1
         ball.x_bounce()
         scoreboard.r_point()
-
-
 
 
 
