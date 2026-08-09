@@ -17,3 +17,6 @@ dist/
 # Ignore OS-generated files
 .DS_Store
 Thumbs.db
+__pycache__/
+*.pyc
+*.pyo
